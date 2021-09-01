@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+
+  .App {
+    height: 100vh;
+
+    header {
+      h1 {
+        text-align: center
+      }
+
+      .filter-display {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+
+        .filter__dropdown {
+          left: 0;
+          top: 0;
+          cursor: pointer;
+          color: #616161;
+          font-weight: bold;
+          z-index: 10;
+          margin-bottom: 0;
+          padding: 10px;
+          font-size: 18px;
+        }
+
+        .dropdown__content {
+          display: none;
+          flex-direction: column;
+          position: relative;
+          z-index: 100;
+          top: 0px;
+          left: 10px;
+          background-color: #fff;
+          border: 1px solid #616161;
+          border-radius: 5px;
+          overflow: hidden;
+          margin-top: 3px;
+
+          span {
+            cursor: pointer;
+            padding: 10px;
+
+            &:hover {
+              background-color: #e0eafd;
+            }
+          }
+
+          .menu__span {
+            border-bottom: .5px solid #595959;
+            font-family: 'Raleway', sans-serif;
+          }
+        }
+
+        .show__filter__options {
+          display: flex;
+        }
+      }
+
+      button {
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
+        background-color: #fff;
+        border: 0px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+        border: 1px solid;
+      }
+
+      @media(max-width: 480px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        button {
+          font-size: 0.9rem;
+        }
+
+        .filter-display {
+          left: 5px;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@import './_forms.scss';
+@import './_duties.scss';
+@import './_tasks.scss';
+@import './_buttons.scss';
+
+//TODO
+// re-naming stuff 
+// API refactor -- routes naming change

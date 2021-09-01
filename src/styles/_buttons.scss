@@ -1,0 +1,132 @@
+.button__actions,
+.button__actions__homepage {
+  display: flex;
+  justify-content: center;
+}
+
+.edit__btn {
+  color: #436fc2;
+  border-radius: 5px;
+  background-color: #e0eafd;
+  border: 0px;
+  font-size: .9rem;
+  width: 30%;
+  padding: 5px;
+}
+
+.delete__btn {
+  color: #af394c;
+  border-radius: 5px;
+  ;
+  background-color: #fae8ea;
+  border: 0px;
+  font-size: .9rem;
+  width: 30%;
+  padding: 5px;
+}
+
+.add__btn {
+  color: #3fb17c;
+  border-radius: 5px;
+  ;
+  background-color: #ddfdee;
+  border: 0px;
+  font-size: .9rem;
+  width: 30%;
+  padding: 5px;
+}
+
+.edit__btn__task {
+  color: #436fc2;
+  border-radius: 5px;
+  background-color: #e0eafd;
+  border: 0px;
+  font-size: 1rem;
+  width: 10%;
+  padding: 10px;
+}
+
+.delete__btn__task {
+  color: #af394c;
+  border-radius: 5px;
+  ;
+  background-color: #fae8ea;
+  border: 0px;
+  font-size: 1rem;
+  width: 10%;
+  padding: 10px;
+}
+
+.add__btn__task {
+  color: #3fb17c;
+  border-radius: 5px;
+  ;
+  background-color: #ddfdee;
+  border: 0px;
+  font-size: 1rem;
+  width: 10%;
+  padding: 10px;
+}
+
+.exit__btn {
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: rgb(85, 83, 83);
+}
+
+.submit__btn {
+  color: #3968c0;
+  border-radius: 5px;
+  background-color: #e0eafd;
+  border: 0px;
+  font-size: 1rem;
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submit__btn__container {
+  display: flex;
+  justify-content: center;
+}
+
+.home__button {
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  color: #616161;
+  font-weight: bold;
+  z-index: 10;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+@media all and (max-width: 400px) {
+  .add__btn__task {
+    margin: 1px;
+    width: 35px !important;
+  }
+
+  .edit__btn__task {
+    margin: 1px;
+    width: 35px !important;
+
+  }
+
+  .delete__btn__task {
+    margin: 1px;
+    width: 35px !important;
+  }
+
+  .submit__btn {
+    width: 35px !important;
+    padding: 6px;
+    font-size: 13px !important;
+  }
+}

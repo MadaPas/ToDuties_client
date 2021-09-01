@@ -1,0 +1,125 @@
+.all__duties {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  flex-flow: row wrap;
+  margin-top: 40px;
+  padding-bottom: 30px;
+
+}
+
+.duty__task {
+  background-color: #fff;
+  border-radius: 5px;
+  ;
+  padding: 15px 10px;
+  min-width: 250px;
+  margin: 10px;
+  height: fit-content;
+
+  margin: 1rem 1rem 0 0;
+  box-shadow: 0 1px 3px 0 rgba(58, 62, 75, 0.25);
+  flex: 0 0 25%;
+  align-items: flex-start;
+  align-content: flex-start;
+  border-radius: .2rem;
+
+  .duty__header {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    padding: 0 0 10px;
+
+    .duty__name {
+      align-items: center;
+      display: flex;
+      font-weight: 700;
+      color: rgb(121, 118, 118);
+
+      input {
+        height: 17px;
+        width: 30px;
+        margin: 0;
+      }
+    }
+
+    .duty__price {
+      margin: 0 5px;
+      font-size: 15px;
+      color: rgb(143, 140, 140);
+    }
+  }
+
+  .duty__description {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: rgb(116, 113, 113);
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .duty__special {
+    background-color: #f8f8f8;
+    margin: 15px 0 10px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    ;
+    display: flex;
+    flex-direction: column;
+
+    div {
+      padding: 5px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .Other,
+  .Food,
+  .Work {
+    background-color: #f8f8f8;
+  }
+
+  .duty__type {
+    padding: 15px 10px;
+    border-radius: 5px;
+    ;
+    color: #82878e;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 10px;
+    font-weight: 400;
+
+    select {
+      padding: 3px;
+    }
+  }
+}
+
+.hide__duty {
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.duty__concluded {
+  display: none;
+}
+
+.filtered-display {
+  display: block;
+}
+
+.duty__special {
+  color: rgb(100, 100, 100);
+}
+
+.title__container {
+  border-bottom: 1px solid #eeeeee;
+}

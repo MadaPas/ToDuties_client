@@ -1,0 +1,91 @@
+@mixin flexColumn () {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  @include flexColumn();
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 5px;
+
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    margin: 10px 0;
+    @include flexColumn();
+
+    select {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      ;
+      border: 1px;
+      background-color: #f8f8f8;
+    }
+
+    @media all and (max-width: 480px) {
+      select {
+        padding: 10px;
+      }
+    }
+  }
+
+  fieldset {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 0;
+
+    input[type="date"] {
+      width: 97%;
+    }
+  }
+
+  input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    ;
+    background-color: #f8f8f8;
+    border: 1px;
+  }
+}
+
+.form__create {
+  position: relative;
+  max-width: 768px;
+  margin: auto;
+  top: 20%;
+  transform: translateY(-15%);
+}
+
+.edit__header {
+  align-items: center;
+  font-weight: 800;
+  color: rgb(121, 118, 118);
+  font-family: 'Raleway', sans-serif;
+}
+
+label,
+select {
+  font-family: 'Raleway', sans-serif;
+}
+
+select {
+  font-weight: bolder;
+}
+
+@media all and (max-width: 500px) {
+  .edit__header {
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .edit__header {
+    font-size: 20px;
+  }
+}

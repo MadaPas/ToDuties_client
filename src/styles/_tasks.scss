@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+.duty__tasks {
+  padding: 5px 0 10px 0;
+
+  .tasks__area {
+
+    .task__total__price {
+      text-align: right;
+      padding: 5px;
+
+      span {
+        font-weight: 500;
+        color: rgb(143, 140, 140);
+      }
+    }
+
+    .tasks {
+      display: flex;
+      margin: 5px 0;
+      padding: 5px;
+      align-items: baseline;
+      cursor: pointer;
+      justify-content: space-between;
+
+      span {
+        margin: 0 10px;
+      }
+
+      .tasks__price {
+        padding: 0;
+        margin: 0;
+        color: rgb(131, 129, 129);
+      }
+
+      .tasks__name {
+        padding: 0;
+        margin: 0;
+        color: rgb(83, 83, 83);
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+      }
+
+      input {
+        margin: 5px 10px;
+      }
+
+      .concluded {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
