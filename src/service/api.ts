@@ -3,7 +3,7 @@ import swal from 'sweetalert';
 import { offlineService, allQueues } from './offlineService';
 import { localDuties } from './localStorage';
 
-const localHost = process.env.NODE_ENV === 'development' ? 'https://madapas-to-duties.herokuapp.com' : '';
+const localHost = 'https://madapas-to-duties.herokuapp.com';
 
 // Post Requests for create, update and delete
 const handlePostWhenOffline = async (
